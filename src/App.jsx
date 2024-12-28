@@ -23,7 +23,7 @@ export default function App()
   return (
 
     <>
-      <div className="App">
+      <div className="app-container">
       {featPupId && (
         <div className= "featured-puppy">
           <h2>{featuredPup.name}</h2>
@@ -43,7 +43,6 @@ export default function App()
             </p>
           );
         })}
-        <button className="button">Click Me</button>
       </div>
     </>
   );
