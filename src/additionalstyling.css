@@ -41,3 +41,36 @@
   .button:hover {
     background-color: #388e3c;
   }
+
+  .app-container {
+    display: flex;              /* Enable flexbox layout */
+    flex-direction: column;     /* Stack items vertically */
+    justify-content: center;    /* Center content vertically */
+    align-items: center;        /* Center content horizontally */
+    min-height: 100vh;          /* Full viewport height */
+    padding: 20px;
+    gap: 20px;                  /* Space between items */
+  }
+  
+  /* Flexbox for the puppy items list */
+  .puppy-list {
+    display: flex;              /* Enable flexbox layout */
+    flex-wrap: wrap;            /* Allow wrapping of items */
+    gap: 15px;                  /* Space between items */
+    justify-content: center;    /* Center puppy items horizontally */
+    margin: 20px 0;
+  }
+  
+  /* Individual puppy item styling */
+  .puppy-item {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .puppy-item:hover {
+    background-color: #e0e0e0; /* Change color on hover */
+  }
