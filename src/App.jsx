@@ -5,7 +5,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 //import "./additionalStyles.css";
-import './styles/additionalStyles.css';
+import './additionalstyling.css';
 import { puppyList } from "./data.js";
 
 
