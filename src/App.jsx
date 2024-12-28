@@ -4,14 +4,16 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import "./additionalStyles.css";
 import { puppyList } from "./data.js";
-import './path-to-css.css';
+
 
 export default function App() 
 {
   const [puppies, setPuppies] = useState(puppyList);
   const [featPupId, setFeatPupId] = useState(null);
   console.log("puppyList:", puppyList);
+ 
   function handleClick(puppy) {
     console.log("puppy id: ",puppy.id);
     setFeatPupId(puppy.id);
@@ -22,7 +24,7 @@ export default function App()
     <>
       <div className="App">
       {featPupId && (
-        <div>
+        <div className= "featured-puppy">
           <h2>{featuredPup.name}</h2>
           <ul>
             <li>Age: {featuredPup.age}</li>
@@ -40,6 +42,7 @@ export default function App()
             </p>
           );
         })}
+        <button className="button">Click Me</button>
       </div>
     </>
   );
